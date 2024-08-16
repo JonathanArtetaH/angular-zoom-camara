@@ -1,0 +1,14 @@
+<button type="button" (click)="onStart()">Start</button>
+<button type="button" (click)="onStop()">stop</button>
+<button type="button" (click)="onZoomChange()">zoom 500</button>
+<br />
+<video #video></video>
+
+<div>
+  <video #video autoplay></video>
+</div>
+
+{{ videoTrack | json }}
+{{ zoomAvailable }}
+{{ zoomMin }}
+{{ zoomMax }}
